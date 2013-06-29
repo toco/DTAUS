@@ -8,6 +8,18 @@ I wrote the parser to convert DTAUS files created by my book keeping software to
 
 With a small [category](https://gist.github.com/toco/5892319) and the offical [BezahlCode libray](http://www.bezahlcode.de/informationen/), it's easy to create an app that converts DTAUS files to BezahlCode URLs and opens them with e.g. OutBank.
 
+
+Usage
+-----
+
+```objective-c
+    DTAData *aDTAData = [DTAParser parseData:dtausData];
+    NSString *senderBankAccount = aDTAData.auftraggeberKonto;
+    NSString *senderSortCode = aDTAData.auftraggeberBankleitzahl;	
+```
+
+Other example: [https://gist.github.com/toco/5892319](https://gist.github.com/toco/5892319)
+
 File format info:
 -----------------
 [http://de.wikipedia.org/wiki/DTAUS](http://de.wikipedia.org/wiki/DTAUS)
