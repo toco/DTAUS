@@ -1,22 +1,3 @@
-DTAUS
-=====
-
-A simple DTAUS parser written in Objective-C.
-
-DTAUS is a file format used in the german bank sector for bank transfers.
-I wrote the parser to convert DTAUS files created by my book keeping software to BezahlCode URLs.
-
-With a small [category](https://gist.github.com/toco/5892319) and the offical [BezahlCode libray](http://www.bezahlcode.de/informationen/), it's easy to create an app that converts DTAUS files to BezahlCode URLs and opens them with e.g. OutBank.
-
-File format info:
------------------
-[http://de.wikipedia.org/wiki/DTAUS](http://de.wikipedia.org/wiki/DTAUS)
-
-[http://www.infodrom.org/projects/dtaus/dtaus.html](http://www.infodrom.org/projects/dtaus/dtaus.html)
-
-License
-=======
-
 Copyright (c) 2013 Tobias Conradi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
